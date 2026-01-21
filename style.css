@@ -28,3 +28,48 @@ body {
  background-color: white;
  overflow: hidden; /* contain objects "on-screen" */
 }
+
+#background {
+    width: 600px;
+    height: 400px;
+}
+
+#trexidle {
+    position: relative;
+    top: 150px;
+    width: 150px;
+}
+
+#car1 {
+    position: relative;
+    width: 200px;
+    top: 200px;
+    left: -190px;
+}
+
+#car2 {
+    position: relative;
+    width: 200px;
+    top: 110px;
+    left: 280px;
+}
+
+#toilet {
+    position: relative;
+    width: 100px;
+    top: 200px;
+    left: 315px;
+}
+
+#alan {
+    position: relative;
+    width: 80px;
+    top: 110px;
+    left: -20px;
+}
+
+#ian {
+    position: relative;
+    width: 35px;
+    top: 100px
+}
