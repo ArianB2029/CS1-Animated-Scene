@@ -38,41 +38,73 @@ body {
     position: relative;
     width: 150px;
     top: 150px;
+    left: -185px;
+    z-index: 1;
     animation-name: trex;
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
-    animation-timing-function: ;
+    animation-timing-function: linear;
+}
+
+#trexrun {
+    position: relative;
+    width: 200px;
+    top: 150px;
+    z-index: 1;
+    animation-name: trexrun;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes trex {
-    0% { transform: translate(0px, 0px); }
-    15% { transform: translate(0px, 70px); }
-    30% { transform: translate(0px, 70px) rotate(20deg); }
-    45% { transform: translate(0px, 70px) rotate(0deg); }
-    65% { transform: translate(170px, 80px); }
-    80% {}
-    100% {}
+    0% { transform: translate(0px, 0px); opacity: 1; }
+    15% { transform: translate(0px, 70px); opacity: 1; }
+    20% { transform: translate(0px, 70px); opacity: 1; }
+    30% { transform: translate(0px, 70px) rotate(30deg); opacity: 1; }
+    40% { transform: translate(0px, 70px) rotate(0deg); opacity: 1; }
+    59% { transform: translate(170px, 80px); opacity: 1; }
+    60% { transform: translate(170px, 80px); opacity: 0; }
+    75% { transform: translate(170px, 80px); opacity: 0; }
+    85% { transform: translate(430px, 75px); opacity: 0; }
+    90% { transform: translate(430px, 75px) rotate(45deg); opacity: 1; }
+    95% { transform: translate(430px, 75px) rotate(0deg); opacity: 1; }
+    100% { transform: translate(430px, 75px); opacity: 1; }
+}
+
+@keyframes trexrun {
+    0% { transform: translate(0px, 0px); opacity: 0; }
+    15% { transform: translate(0px, 70px); opacity: 0; }
+    20% { transform: translate(0px, 70px); opacity: 0; }
+    30% { transform: translate(0px, 70px) rotate(30deg); opacity: 0; }
+    40% { transform: translate(0px, 70px) rotate(0deg); opacity: 0; }
+    60% { transform: translate(170px, 80px); opacity: 1; }
+    75% { transform: translate(170px, 80px); opacity: 1; }
+    85% { transform: translate(430px, 75px); opacity: 1; }
+    90% { transform: translate(430px, 75px) rotate(45deg); opacity: 0; }
+    95% { transform: translate(430px, 75px) rotate(0deg); opacity: 0; }
+    100% { transform: translate(430px, 75px); opacity: 0; }
 }
 
 #car1 {
     position: relative;
     width: 200px;
-    top: 200px;
-    left: -190px;
+    top: 110px;
+    left: 70px;
 }
 
 #car2 {
     position: relative;
     width: 200px;
     top: 110px;
-    left: 280px;
+    left: 80px;
 }
 
 #toilet {
     position: relative;
     width: 100px;
     top: 200px;
-    left: 315px;
+    left: 135px;
 }
 
 #alan {
